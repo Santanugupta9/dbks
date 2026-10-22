@@ -7,7 +7,7 @@ import authRoutes from "./modules/auth/auth.routes.js";
 import productRoutes from "./modules/products/product.routes.js";
 import partyRoutes from "./modules/parties/party.routes.js";
 import importRoutes from "./modules/imports/import.routes.js";
-
+import orderRoutes from "./modules/orders/order.routes.js";
 import {
   notFound,
   errorHandler,
@@ -37,7 +37,7 @@ app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/products", productRoutes);
 app.use("/api/v1/parties", partyRoutes);
 app.use("/api/v1/imports", importRoutes);
-
+app.use("/api/v1/orders", orderRoutes);
 app.use(notFound);
 app.use(errorHandler);
 
